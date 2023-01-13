@@ -7,13 +7,15 @@
   --lorem-ipsum-color: #757575;
   --our-team-color: #f5f4fa;
   --icons-color: #afb1b8;
+  --icons-close-color: #000000;
 }
 
 * {
   box-sizing: border-box;
 }
 
-* :hover {
+* :hover,
+:focus {
   transition-property: background-color, color, box-shadow, border, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -83,10 +85,16 @@ body {
 
 .header_contact_mail {
   margin-right: 5px;
+  position: relative;
+  top: 1px;
+  left: 0px;
 }
 
 .header_contact_phone {
   margin-right: 5px;
+  position: relative;
+  top: 3px;
+  left: 0px;
 }
 
 .header_list_1 > .item_list_1:not(:last-child) {
@@ -106,9 +114,11 @@ body {
 
 .header_contact {
   color: var(--lorem-ipsum-color);
+  fill: var(--lorem-ipsum-color);
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
+  position: relative;
 }
 
 .header_nav:hover,
@@ -539,7 +549,7 @@ body {
   position: fixed;
   z-index: 1;
   transition-property: visibility, opacity, transform;
-  transition-duration: 2s;
+  transition-duration: 250ms;
   transform: translateX(-50%) translateY(-50%) scale(1) rotate(720deg) skew(0deg, 0deg);
   opacity: 1;
   visibility: visible;
@@ -555,6 +565,22 @@ body {
 
 .close_button {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--text_on_background-color);
+}
+
+.modal_bg_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_btn_close {
+  fill: var(--icons-close-color);
 }
