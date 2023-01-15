@@ -8,6 +8,7 @@
   --our-team-color: #f5f4fa;
   --icons-color: #afb1b8;
   --icons-close-color: #000000;
+  --brand-overlay-color: rgba(33, 150, 243, 0.9);
 }
 
 * {
@@ -440,10 +441,13 @@ body {
 }
 
 .card {
+  width: 370px;
   margin: 0%;
   padding: 0%;
   border: 1px solid #eeeeee;
   flex-basis: ((100% - 2 * 30px) / 3);
+  position: relative;
+  overflow: hidden;
 }
 
 .card:hover,
@@ -451,9 +455,31 @@ body {
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
-.card h3,
-.card p {
+.card_title,
+.card_text {
   padding-left: 24px;
+}
+
+.card_overlay {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  background-color: var(--brand-overlay-color);
+  transform: translateY(150%);
+  transition: transform 250ms;
+}
+
+.card_overlay_text {
+  padding: 49px 45px 49px 24px;
+  margin: 0px;
+  color: var(--text_on_background-color);
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.card:hover .card_overlay,
+.card:focus .card_overlay {
+  transform: translateY(0%);
 }
 
 .footer {
