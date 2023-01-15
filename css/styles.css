@@ -55,6 +55,17 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+.is_active::after {
+  content: '';
+  width: 53px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  background-color: var(--brand-color);
+  position: absolute;
+  top: 76px;
+}
+
 .header_container {
   max-width: 1200px;
   height: 80px;
@@ -457,6 +468,10 @@ body {
 .card_title,
 .card_text {
   padding-left: 24px;
+}
+
+.card_text {
+  color: var(--lorem-ipsum-color);
 }
 
 .card_overlay {
