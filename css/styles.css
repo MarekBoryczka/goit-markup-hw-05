@@ -141,12 +141,6 @@ body {
 .footer_adress:hover,
 .footer_adress:focus {
   color: var(--brand-color);
-}
-
-.item_list_2:hover .header_contact_phone,
-.item_list_2:focus .header_contact_phone,
-.item_list_2:hover .header_contact_mail,
-.item_list_2:hover .header_contact_mail {
   fill: var(--brand-color);
 }
 
@@ -381,11 +375,14 @@ body {
 }
 
 .team_bg_icon:hover,
-.team_bg_icon:focus,
+.team_bg_icon:focus {
+  background-color: var(--brand-color);
+  cursor: pointer;
+}
+
 .team_bg_icon:hover .team_icon,
 .team_bg_icon:focus .team_icon {
   fill: var(--text_on_background-color);
-  background-color: var(--brand-color);
 }
 
 .section_client {
@@ -424,10 +421,12 @@ body {
   border-radius: 4px;
 }
 
-.border_client:hover {
+.border_client:hover,
+.border_client:focus {
   width: 170px;
   height: 92px;
   border: 1px solid var(--brand-color);
+  cursor: pointer;
 }
 
 .border_client:hover .client_icon,
@@ -577,6 +576,7 @@ body {
 .footer_bg_icon:hover,
 .footer_bg_icon:focus {
   background: var(--brand-color);
+  cursor: pointer;
 }
 
 .footer_icon {
