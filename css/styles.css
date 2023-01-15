@@ -218,7 +218,8 @@ body {
 
 .order,
 .main_filter,
-.footer_adress {
+.footer_adress,
+.card {
   cursor: pointer;
 }
 
@@ -467,6 +468,8 @@ body {
   background-color: var(--brand-overlay-color);
   transform: translateY(150%);
   transition: transform 250ms;
+  /*top: 400px;
+  transition: top 250ms;*/
 }
 
 .card_overlay_text {
@@ -480,6 +483,7 @@ body {
 .card:hover .card_overlay,
 .card:focus .card_overlay {
   transform: translateY(0%);
+  /*top: 0px;*/
 }
 
 .footer {
