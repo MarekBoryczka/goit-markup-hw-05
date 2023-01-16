@@ -48,7 +48,6 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  text-decoration: none;
 }
 
 .span_logo {
@@ -95,13 +94,11 @@ body {
 }
 
 .header_list_1 {
-  list-style: none;
   display: flex;
   justify-content: space-between;
 }
 
 .header_list_2 {
-  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,7 +131,6 @@ body {
   color: var(--main-color);
   font-weight: 500;
   font-size: 14px;
-  text-decoration: none;
 }
 
 .header_contact {
@@ -142,7 +138,7 @@ body {
   fill: var(--lorem-ipsum-color);
   font-weight: 500;
   font-size: 14px;
-  text-decoration: none;
+
   position: relative;
 }
 
@@ -165,7 +161,6 @@ body {
 .main_filters {
   display: flex;
   justify-content: center;
-  list-style: none;
 }
 
 .main_filter {
@@ -175,7 +170,6 @@ body {
   border: none;
   border-radius: 4px;
   text-align: center;
-  text-decoration: none;
 }
 
 .main_filters > .item:not(:last-child) {
@@ -248,7 +242,6 @@ body {
 }
 
 .list_lorem {
-  list-style: none;
   display: flex;
   justify-content: center;
   padding: 0px;
@@ -339,7 +332,6 @@ body {
 }
 
 .cards_team {
-  list-style: none;
   display: flex;
   justify-content: space-between;
   margin: 0px;
@@ -417,7 +409,6 @@ body {
 }
 
 .list_client {
-  list-style: none;
   display: flex;
   justify-content: space-between;
   padding: 0px;
@@ -457,7 +448,6 @@ body {
 }
 
 .card-set {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   padding: 0%;
@@ -532,7 +522,6 @@ body {
 }
 
 .list_adress {
-  list-style: none;
   line-height: 24px;
   padding: 0px;
   margin: 0px;
@@ -550,7 +539,6 @@ body {
   padding: 0px;
   margin: 0px;
   font-style: normal;
-  text-decoration: none;
 }
 
 .list_adress > li:not(:last-child) {
@@ -577,7 +565,6 @@ body {
 }
 
 .footer_list_icon {
-  list-style: none;
   width: 206px;
   height: 44px;
   display: flex;
