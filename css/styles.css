@@ -100,7 +100,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px;
 }
 
 .header_list_1 {
@@ -110,23 +109,21 @@ body {
 
 .header_list_2 {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 0px;
 }
 
 .header_contact_mail {
   margin-right: 5px;
-  position: relative;
+  /*position: relative;
   top: 1px;
-  left: 0px;
+  left: 0px;*/
 }
 
 .header_contact_phone {
   margin-right: 5px;
-  position: relative;
+  /*position: relative;
   top: 3px;
-  left: 0px;
+  left: 0px;*/
 }
 
 .header_list_1 > .item_list_1:not(:last-child) {
@@ -292,7 +289,6 @@ body {
 }
 
 .advantages_title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -508,8 +504,6 @@ body {
 .card_overlay {
   position: relative;
   overflow: hidden;
-  /*top: 400px;
-  transition: top 250ms;*/
 }
 
 .card_overlay_text {
