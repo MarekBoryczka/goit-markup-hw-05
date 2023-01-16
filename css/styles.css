@@ -28,13 +28,13 @@
   box-sizing: border-box;
 }
 
-* :hover,
+/* :hover,
 :focus {
   transition-property: background-color, color, box-shadow, border, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
-}
+}*/
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -158,6 +158,10 @@ body {
 .header_contact:focus,
 .footer_adress:hover,
 .footer_adress:focus {
+  transition-property: background-color, color, box-shadow, border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
   color: var(--brand-color);
   fill: var(--brand-color);
 }
@@ -189,6 +193,10 @@ body {
 
 .main_filter:hover,
 .main_filter:focus {
+  transition-property: background-color, color, box-shadow, border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
   color: var(--text_on_background-color);
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
@@ -255,6 +263,16 @@ body {
 
 .list_lorem > .item_lorem:not(:last-child) {
   padding-right: 30px;
+}
+
+.item_lorem h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .item_lorem p {
@@ -373,12 +391,20 @@ body {
 
 .team_bg_icon:hover,
 .team_bg_icon:focus {
+  transition-property: background-color, color, box-shadow, border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
   background-color: var(--brand-color);
   cursor: pointer;
 }
 
 .team_bg_icon:hover .team_icon,
 .team_bg_icon:focus .team_icon {
+  transition-property: background-color, color, box-shadow, border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
   fill: var(--text_on_background-color);
 }
 
@@ -402,14 +428,18 @@ body {
 .border_client {
   width: 170px;
   height: 92px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 16px 32px;
+
   border: 1px solid var(--icons-color);
   border-radius: 4px;
 }
 
 .border_client:hover,
 .border_client:focus {
+  transition-property: background-color, color, box-shadow, border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
   width: 170px;
   height: 92px;
   border: 1px solid var(--brand-color);
@@ -418,6 +448,10 @@ body {
 
 .border_client:hover .client_icon,
 .border_client:focus .client_icon {
+  transition-property: background-color, color, box-shadow, border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
   fill: var(--brand-color);
 }
 
@@ -448,6 +482,10 @@ body {
 
 .card:hover,
 .card:focus {
+  transition-property: background-color, color, box-shadow, border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
@@ -491,7 +529,6 @@ body {
 .card:hover .card_overlay_text,
 .card:focus .card_overlay_text {
   transform: translateY(0%);
-  /*top: 0px;*/
 }
 
 .footer {
@@ -566,6 +603,10 @@ body {
 
 .footer_bg_icon:hover,
 .footer_bg_icon:focus {
+  transition-property: background-color, color, box-shadow, border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
   background: var(--brand-color);
   cursor: pointer;
 }
