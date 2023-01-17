@@ -213,14 +213,14 @@ body {
 }
 
 .order {
-  width: 200px;
-  height: 50px;
   font-weight: 700;
   font-size: 16px;
+  line-height: 30px;
   color: var(--text_on_background-color);
   background-color: var(--brand-color);
   border: none;
   border-radius: 4px;
+  padding: 10px 42px;
 }
 
 .order,
@@ -238,7 +238,6 @@ body {
   display: flex;
   justify-content: center;
   padding: 0px;
-  margin: 0px;
 }
 
 .list_lorem > .item_lorem:not(:last-child) {
@@ -268,7 +267,6 @@ body {
   background: #f5f4fa;
   border-radius: 4px;
   padding: 25px 100px;
-  margin: 0px;
 }
 
 .advantages_title {
@@ -277,14 +275,12 @@ body {
   line-height: 42px;
   text-align: center;
   padding-bottom: 50px;
-  margin: 0px;
 }
 
 .advantages_images {
   display: flex;
   justify-content: space-between;
   padding: 0px;
-  margin: 0px;
 }
 
 .advantages_image {
@@ -318,13 +314,12 @@ body {
   line-height: 42.19px;
   text-align: center;
   padding-bottom: 32px;
-  margin: 0px;
 }
 
 .cards_team {
   display: flex;
   justify-content: space-between;
-  margin: 0px;
+
   padding: 0px;
 }
 
@@ -397,14 +392,12 @@ body {
   line-height: 42.19px;
   text-align: center;
   padding-bottom: 32px;
-  margin: 0px;
 }
 
 .list_client {
   display: flex;
   justify-content: space-between;
   padding: 0px;
-  margin: 0px;
 }
 
 .border_client {
@@ -471,18 +464,14 @@ body {
 
 .card_title {
   font-size: 18px;
-  width: 322px;
-  height: 36px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  padding: 20px 24px 0px 24px;
 }
 
 .card_text {
   color: var(--lorem-ipsum-color);
-  width: 322px;
-  height: 30px;
-}
-
-.card_div {
-  padding: 20px 24px;
+  padding: 4px 24px 20px 24px;
 }
 
 .card_overlay {
@@ -492,7 +481,7 @@ body {
 
 .card_overlay_text {
   padding: 49px 45px 49px 24px;
-  margin: 0px;
+
   color: var(--text_on_background-color);
   font-size: 18px;
   line-height: 1.55;
@@ -523,7 +512,6 @@ body {
 .list_adress {
   line-height: 24px;
   padding: 0px;
-  margin: 0px;
 }
 
 .list_adress:first-child {
@@ -536,7 +524,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   padding: 0px;
-  margin: 0px;
+
   font-style: normal;
 }
 
