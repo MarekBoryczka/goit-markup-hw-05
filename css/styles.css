@@ -14,6 +14,7 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 * ul {
@@ -23,18 +24,6 @@
 * a {
   text-decoration: none;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-/* :hover,
-:focus {
-  transition-property: background-color, color, box-shadow, border, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
-}*/
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -48,7 +37,6 @@ body {
 
 .container {
   max-width: 1200px;
-
   margin: 0px auto;
 }
 
@@ -89,9 +77,7 @@ body {
 }
 
 .header_container {
-  max-width: 1200px;
   height: 80px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -145,8 +131,8 @@ body {
   fill: var(--lorem-ipsum-color);
   font-weight: 500;
   font-size: 14px;
-
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .header_nav:hover,
@@ -163,10 +149,8 @@ body {
   fill: var(--brand-color);
 }
 
-.filters_container {
-  max-width: 1200px;
-  padding: 94px 0px 24px 0px;
-  margin: 0px auto;
+.filters {
+  padding-bottom: 50px;
 }
 
 .main_filters {
@@ -209,17 +193,13 @@ body {
   background-position: center;
   display: flex;
   justify-content: center;
-  padding: 94px 0px;
 }
 
 .main_background {
-  max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0px;
-  padding: 0px;
 }
 
 .main_title {
@@ -230,7 +210,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 30px;
-  margin: 0px;
 }
 
 .order {
@@ -249,6 +228,10 @@ body {
 .footer_adress,
 .card {
   cursor: pointer;
+}
+
+.lorem {
+  padding-bottom: 0px;
 }
 
 .list_lorem {
@@ -347,7 +330,7 @@ body {
 
 .item_team {
   width: 270px;
-  height: 368px;
+  height: 428px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -357,12 +340,15 @@ body {
 .item_team h3 {
   font-weight: 500;
   text-align: center;
+  padding-top: 30px;
 }
 
 .item_team p {
   color: var(--lorem-ipsum-color);
   text-align: center;
   font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 16px;
 }
 
 .container_team_icon {
@@ -455,10 +441,8 @@ body {
   fill: var(--icons-color);
 }
 
-.div_container {
-  max-width: 1200px;
-  padding-bottom: 94px;
-  margin: 0px auto;
+.portfolio {
+  padding-top: 0px;
 }
 
 .card-set {
